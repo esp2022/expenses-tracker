@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
+import '../src/app/globals.css';
+
 
 const LoginPage = () => {
   const [loggedIn, setLoggedIn] = useState(false);

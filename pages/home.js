@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 import Expenses from '../src/app/components/Expenses/Expenses';
 import NewExpense from '../src/app/components/NewExpense/NewExpense';
+import '../src/app/globals.css';
 
 
 

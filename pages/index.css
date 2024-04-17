@@ -1,0 +1,15 @@
+.sign-in {
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    color: black;
+}
+
+p {
+    color: black;
+}

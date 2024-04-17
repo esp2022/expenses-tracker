@@ -20,12 +20,12 @@ const LoginPage = () => {
   };
 
   const signUpHandler = () => {
-    
+
   }
 
   return (
     <div className = "sign-in">
-      <h1>Login Page</h1>
+      <h1>Login</h1>
       <input type="text" placeholder="Username" value={username} onChange={(user) => setUsername(user.target.value)} />
       <input type="password" placeholder="Password" value={password} onChange={(pass) => setPassword(pass.target.value)} />
       <button onClick={loginHandler}>Login</button>

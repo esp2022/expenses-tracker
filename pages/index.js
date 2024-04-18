@@ -20,7 +20,7 @@ const LoginPage = () => {
   };
 
   const signUpHandler = () => {
-    
+    router.push('/signup');
   }
 
   return (

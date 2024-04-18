@@ -1,23 +1,28 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 import '../src/app/globals.css';
+import '../pages/index.js';
 
 
 
-const signUpPage = () => {
-  const [loggedIn, setLoggedIn] = useState(false);
+const SignUpPage = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const router = useRouter();
+  
 
   const signUpHandler = () => {
-    
-  }
+    if (username != undefined && password != undefined) {
+        router.push('/');
+      } else {
+        alert('Invalid Username or Password');
+      }
+  };
 
   return (
     <div className = "Hero">
       <h1>Create an account</h1>
-      <div class="signup-box">
+      <div className="signup-box">
             <form>
                 <input type="text" placeholder="Your Name" required/>
                 <input type="text" placeholder="Username" required/>
@@ -25,11 +30,12 @@ const signUpPage = () => {
                 <input type="password" placeholder="Create Password" required/>
                 <input type="checkbox" id="terms"></input>
                 <label for="terms">I accept the terms and conditions</label>
-                <button type="submit">Sign Up</button>
-                <button onCLick={signUpHandler}>Sign Up</button>
+                <button onClick={signUpHandler}>Sign Up</button>
             </form>
       </div>
 
     </div>
   );
 };
+
+export default SignUpPage;

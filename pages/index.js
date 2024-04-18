@@ -20,7 +20,7 @@ const LoginPage = () => {
   };
 
   const signUpHandler = () => {
-    
+    router.push('/signup');
   }
 
   return (
@@ -30,7 +30,7 @@ const LoginPage = () => {
       <input type="password" placeholder="Password" value={password} onChange={(pass) => setPassword(pass.target.value)} />
       <button onClick={loginHandler}>Login</button>
       <p>Not a member? Sign up for $1,000,000 today!</p>
-      <button onCLick={signUpHandler}>Sign Up</button>
+      <button onClick={signUpHandler}>Sign Up</button>
     </div>
   );
 };

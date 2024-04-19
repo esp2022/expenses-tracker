@@ -25,7 +25,10 @@ const LoginPage = () => {
 
   return (
     <div className = "sign-in">
-      <h1>Login</h1>
+      <header className="app-header">
+        <h1 className="app-title">WiseWallet</h1>
+        <p className="app-subtitle">Expense Tracker</p>
+      </header>
       <input type="text" placeholder="Username" value={username} onChange={(user) => setUsername(user.target.value)} />
       <input type="password" placeholder="Password" value={password} onChange={(pass) => setPassword(pass.target.value)} />
       <button onClick={loginHandler}>Login</button>

@@ -4,7 +4,6 @@
     align-items: center;
     margin: auto;
     text-align: center;
-    margin-top: 5%;
 }
 
 h1 {
@@ -17,5 +16,6 @@ p {
 }
 
 text {
+    font-size: larger;
     font-size: larger;
 }

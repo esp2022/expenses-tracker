@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 import '../src/app/globals.css';
-import '../pages/index.js';
+import './signup.css';
 
 
 
@@ -20,20 +20,21 @@ const SignUpPage = () => {
   };
 
   return (
-    <div className = "Hero">
-      <h1>Create an account</h1>
+    <div className = "hero">
       <div className="signup-box">
+        <div class= "left-box">
             <form>
-                <input type="text" placeholder="Your Name" required/>
-                <input type="text" placeholder="Username" required/>
-                <input type="email" placeholder="Your email id" required/>
-                <input type="password" placeholder="Create Password" required/>
+            <h1>Create an account</h1>
+                <input type="text" placeholder="Your Name" required class="input-box"/>
+                <input type="text" placeholder="Username" required class="input-box"/>
+                <input type="email" placeholder="Your email id" required class="input-box"/>
+                <input type="password" placeholder="Create Password" required class="input-box"/>
                 <input type="checkbox" id="terms"></input>
                 <label for="terms">I accept the terms and conditions</label>
                 <button onClick={signUpHandler}>Sign Up</button>
             </form>
+          </div>
       </div>
-
     </div>
   );
 };

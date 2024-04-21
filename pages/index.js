@@ -25,12 +25,20 @@ const LoginPage = () => {
 
   return (
     <div className = "sign-in">
-      <h1>Login</h1>
-      <input type="text" placeholder="Username" value={username} onChange={(user) => setUsername(user.target.value)} />
-      <input type="password" placeholder="Password" value={password} onChange={(pass) => setPassword(pass.target.value)} />
-      <button onClick={loginHandler}>Login</button>
-      <p>Not a member? Sign up for $1,000,000 today!</p>
-      <button onClick={signUpHandler}>Sign Up</button>
+      <form action="">
+        <h1>Login</h1>
+        <div class = "input-box">
+        <input type="text" placeholder="Username" value={username} onChange={(user) => setUsername(user.target.value)} />
+        </div>
+        <div class = "input-box">
+        <input type="password" placeholder="Password" value={password} onChange={(pass) => setPassword(pass.target.value)} />
+        </div>
+        <button onClick={loginHandler}>Login</button>
+        <div className = "signup">
+        <p>Not a member? Sign up today!!!</p>
+        </div>
+        <button onClick={signUpHandler}>Sign Up</button>
+      </form>
     </div>
   );
 };

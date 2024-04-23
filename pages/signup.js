@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
-import './signup.css'
-import '../pages/index.js';
+import '../src/app/globals.css';
+import './signup.css';
 
 
 
@@ -20,36 +20,20 @@ const SignUpPage = () => {
   };
 
   return (
-    <div className = "Hero">
-      <header className="app-header">
-        <h1 className="app-title">WiseWallet</h1>
-        <p className="app-subtitle">Expense Tracker</p>
-      </header>
-      <h1>Create an account</h1>
-      <div className="container">
-          <form>
-            <div className= 'form-group'>
-              <label for="name">Name:</label>
-              <input type="text" placeholder="Your Name" required/>
-            </div>
-            <div className= 'form-group'>
-              <label for="username">Username:</label>
-              <input type="text" placeholder="Username" required/>
-            </div>
-            <div className= 'form-group'>
-              <label for="email">Email:</label>
-              <input type="email" placeholder="Your email id" required/>
-            </div>
-            <div className= 'form-group'>
-              <label for="password">Create Password:</label>
-              <input type="password" placeholder="Password" required/>
-            </div>
-            <div className= 'form-group'>
-              <label for="terms">I accept the terms and conditions</label>
-              <input type="checkbox" id="terms"></input>
-            </div>
-            <button onClick={signUpHandler}>Sign Up</button>
-          </form>
+    <div className = "hero">
+      <div className="signup-box">
+        <div class= "left-box">
+            <form>
+            <h1>Create an account</h1>
+                <input type="text" placeholder="Your Name" required class="input-box"/>
+                <input type="text" placeholder="Username" required class="input-box"/>
+                <input type="email" placeholder="Your email id" required class="input-box"/>
+                <input type="password" placeholder="Create Password" required class="input-box"/>
+                <input type="checkbox" id="terms"></input>
+                <label for="terms">I accept the terms and conditions</label>
+                <button onClick={signUpHandler}>Sign Up</button>
+            </form>
+          </div>
       </div>
     </div>
   );
